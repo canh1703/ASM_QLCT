@@ -1,0 +1,43 @@
+.sidebar-nav {
+    padding: 1rem;
+  }
+  a {
+    color: #fff;
+  }
+  #sidebar,
+  .sidebar-client {
+    width: 250px;
+    color: #fff;
+    background-color: #b4bafe;
+  }
+  
+  .sidebar-mobile {
+    display: none;
+  }
+  
+  .sidebar-head {
+    background-color: #b199fd;
+    padding: 1rem;
+  }
+  
+  .sidebar-client {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+  }
+  .nav-link:hover {
+    border-radius: 5px;
+    color: #b199fd;
+    background-color: #e7dede;
+  }
+  
+  @media (max-width: 768px) {
+    .sidebar-client {
+      display: none;
+    }
+    .sidebar-mobile {
+      display: block;
+    }
+  }
+  

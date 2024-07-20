@@ -1,26 +1,19 @@
-// import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+// import Dashboard from './pages/Admin/Dashboard';
+import Dashboard from './pages/Admin/Dashboard/Dashboard';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>Welcome Members!</h1>
-        <p>
-          Thank you for joining our community. Start exploring and enjoy your time here!
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div>
+        <Routes>
+          <Route path="dashboard" element={<Dashboard />} />
+          {/* Các route khác */}
+        </Routes>
+      </div>
+    </Router>
   );
-  
-}
+};
 
 export default App;

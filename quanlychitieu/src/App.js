@@ -9,7 +9,6 @@ const App = () => {
       <div>
         <Routes>
           <Route path="dashboard" element={<Dashboard />} />
-          {/* Các route khác */}
         </Routes>
       </div>
     </Router>
